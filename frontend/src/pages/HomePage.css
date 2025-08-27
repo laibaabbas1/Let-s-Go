@@ -1,0 +1,69 @@
+.gallery-section {
+    padding: 60px 0;
+    background-color: #f8f9fa;
+}
+
+.gallery-title {
+    margin-bottom: 40px;
+    font-weight: 700;
+    color: var(--primary-color);
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+/* "Folder" Style Card */
+.city-folder-card {
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    cursor: pointer;
+    position: relative;
+    /* Zaroori hai overlay ke liye */
+}
+
+.city-folder-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 25px rgba(32, 178, 170, 0.25);
+}
+
+.city-folder-img {
+    height: 350px;
+    width: 100%;
+    object-fit: cover;
+    /* Image ko stretch hone se bachata hai */
+}
+
+/* Image ke upar overlay */
+.card-img-overlay {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 60%);
+    display: flex;
+    align-items: flex-end;
+    /* Text ko neeche rakhta hai */
+    justify-content: center;
+    padding: 20px;
+}
+
+.city-folder-card .card-title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: white;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+/* Modal ke andar Carousel ki image/video ki height */
+.gallery-carousel-item {
+    height: 70vh;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery-carousel-item img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+    /* Poori image/video dikhata hai */
+}

@@ -1,0 +1,28 @@
+.admin-sidebar {
+    background: #f8f9fa;
+    min-height: calc(100vh - 70px);
+    /* header/footer height k mutabik base adjustment*/
+    border-right: 1px solid #dee2e6;
+    padding-top: 20px;
+}
+
+.admin-sidebar .nav-link {
+    color: #343a40;
+    font-weight: 500;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.admin-sidebar .nav-link:hover {
+    background: #e9ecef;
+}
+
+.admin-sidebar .nav-link.active {
+    background: var(--primary-color);
+    color: white;
+}
+
+.admin-content {
+    padding: 30px;
+}

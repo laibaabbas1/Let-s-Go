@@ -1,0 +1,41 @@
+/*AboutPage.css Mission Section ka background light karne ke liye */
+.mission-section-wrapper {
+    background-color: #ffffff;
+}
+
+/* Team Card ki styling */
+.team-card {
+    border: none;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.team-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.team-card-img {
+    height: 280px;
+    object-fit: cover;
+    object-position: top;
+    /* Taake chehra aam taur par center mein rahe */
+}
+
+.team-card .card-title {
+    color: var(--dark-color);
+    font-weight: 600;
+}
+
+/* Team ke social media icons ki styling */
+.team-social-icons a {
+    font-size: 1.5rem;
+    margin: 0 12px;
+    color: #6c757d;
+    /* Muted grey color */
+    transition: color 0.2s ease;
+}
+
+.team-social-icons a:hover {
+    color: var(--primary-color);
+    /* Hover par Teal Green ho jaayega */
+}
